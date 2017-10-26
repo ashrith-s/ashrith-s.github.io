@@ -283,11 +283,18 @@ a.active{
 @media (max-width: 549px) {
     .thumb{
         height: 49vw;
+        margin: 0 10vw;
     }
     .overlay{
         height: 49vw;
         top: -49vw;
         margin-bottom: -49vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    
+    .overlay_caption{
+        top: -25vw;
     }
     
     .portfolio{
