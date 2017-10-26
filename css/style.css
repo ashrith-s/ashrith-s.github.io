@@ -280,6 +280,21 @@ a.active{
     opacity: 0.5;
 }
 
+@media (max-width: 549px) {
+    .thumb{
+        height: 49vw;
+    }
+    .overlay{
+        height: 49vw;
+        top: -49vw;
+        margin-bottom: -49vw;
+    }
+    
+    .portfolio{
+        padding-bottom: 5%;
+    }
+}
+
 #project1{
     background-image: url(../images/event_04.png);
 }
