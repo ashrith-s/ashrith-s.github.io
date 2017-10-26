@@ -243,14 +243,41 @@ a.active{
 }
 
 .thumb{
-    height: 204px;
+    position: relative;
+    height: 16vw;
     background-size: cover;
     background-position: center;
-    border: 1px solid #efefef;
 }
 
-.thumb:hover{
-    opacity: 0.6;
+.overlay{
+    position: relative;
+    height: 16vw;
+    top: -16vw;
+    margin-bottom: -16vw;
+    background-color: #000;
+    transition: background 0.5s ease;
+    opacity: 0.5;
+}
+
+.overlay_sub{
+    position: relative;
+    top: -9vw;
+    margin-bottom: -24px;
+    text-align: center;
+    color: white;
+}
+
+.overlay_caption{
+    position: relative;
+    top: -9vw;
+    margin-bottom: -3.81vw;
+    text-align: center;
+    color: white;
+}
+
+.thumb-wrapper:hover .overlay{
+    background-color: #064384;
+    opacity: 0.5;
 }
 
 #project1{
@@ -258,7 +285,7 @@ a.active{
 }
 
 #project2{
-    background-image: url(../images/event_04.png);
+    background-image: url(../images/p2p_4.png);
 }
 
 #project3{
