@@ -277,6 +277,14 @@ a.active{
     background-image: url(../images/event_04.png);
 }
 
+figure img{
+    max-width: 100%;
+    border: 1px solid #efefef;
+    display: block;
+    margin: 20px auto;
+}
+
+/*
 .overlay{
     position: absolute;
     top: 0;
