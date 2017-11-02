@@ -601,3 +601,9 @@ video{
         font-size: 0.8em;
     }
 }
+
+@media (max-width: 749px) {
+    .gallery{
+        padding: 0 10px;
+    }
+}
