@@ -563,6 +563,10 @@ ul{
     text-align: center;
 }
 
+.gallery{
+    padding: 0 15px;
+}
+
 .previous{
     float:left;
     font-size: 15px;
@@ -582,4 +586,18 @@ a{
 video{
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 549px) {
+    .gallery{
+        font-size: 0.65em;
+    }
+    
+    .next{
+        font-size: 0.8em;
+    }
+    
+    .previous{
+        font-size: 0.8em;
+    }
 }
