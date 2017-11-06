@@ -561,6 +561,10 @@ ul{
 
 .portfolio-back{
     text-align: center;
+    position: fixed;
+    left: 39%;
+    right:39%;
+    font-size: 15px;
 }
 
 .gallery{
@@ -570,13 +574,11 @@ ul{
 .previous{
     float:left;
     font-size: 15px;
-    margin-top: 7px;
 }
 
 .next{
     float:right;
     font-size: 15px;
-    margin-top: 7px;
 }
 
 a{
