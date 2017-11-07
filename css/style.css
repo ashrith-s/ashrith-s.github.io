@@ -602,6 +602,10 @@ video{
     .previous{
         font-size: 0.8em;
     }
+    
+    .portfolio-back{
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 749px) {
