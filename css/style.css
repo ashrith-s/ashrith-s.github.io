@@ -606,6 +606,14 @@ video{
     .portfolio-back{
         font-size: 0.8em;
     }
+    
+    .project-header{
+        margin-bottom: 45px;
+    }
+    
+    .project-footer{
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 749px) {
