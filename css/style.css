@@ -326,6 +326,10 @@ a.active{
     background-image: url(../images/event_04.png);
 }
 
+#project6{
+    background-image: url(../images/spotify1.jpg);
+}
+
 figure img{
     max-width: 100%;
     border: 1px solid #efefef;
