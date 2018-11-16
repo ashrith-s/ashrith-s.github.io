@@ -330,6 +330,10 @@ a.active{
     background-image: url(../images/spotify1.jpg);
 }
 
+#project7{
+    background-image: url(../images/stamp2.jpeg);
+}
+
 figure img{
     max-width: 100%;
     border: 1px solid #efefef;
