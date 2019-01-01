@@ -537,6 +537,7 @@ Hover effects END */
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .work-set{
     overflow: hidden;
+    margin-top: -0.5%;
 }
 
 .work-logo{
@@ -546,8 +547,8 @@ Hover effects END */
 }
 
 .work-details{
-    margin-top: -4%;
-    margin-bottom: 4%;
+    margin-top: -2.5%;
+    margin-bottom: 5%;
 }
 
 ul{
