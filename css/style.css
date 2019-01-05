@@ -336,14 +336,19 @@ a.active{
 }
 
 #project7{
-    background-image: url(../images/stamp2.jpeg);
+    background-image: url(../images/stamp_1.png);
+}
+
+#project8{
+    background-image: url(../images/voice_1.png);
 }
 
 figure img{
     max-width: 100%;
+    height: auto;
     border: 1px solid #efefef;
     display: block;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 /*
