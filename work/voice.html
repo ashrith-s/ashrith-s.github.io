@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108468313-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108468313-1');
+  </script>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Designing a Voice Interface</title>
+  <meta name="description" content="Portfolio of Ashrith Shetty">
+  <meta name="author" content="Ashrith Shetty">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+    
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">    
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script type='text/javascript'>
+    //Loading gif
+    // Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+  </script>  -->
+    
+</head>
+<body>
+
+<!-- Loading gif 
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="se-pre-con"></div>
+    
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   
+<div class="wrapper">
+    
+<header class="main_nav">
+    <div class="container">
+            <div class="five columns">
+                <div class="logo">
+                    <a href="/">Ashrith Shetty</a>
+                </div>
+            </div>
+            <nav>
+                <a class="sliding-middle-out" href="/">Home</a>
+                <!--
+                <a class="sliding-middle-out" href="process">Process</a>
+                -->
+                <a class="active" href="../work">Work</a>
+                <a class="sliding-middle-out" href="../resume">Resume</a>
+            </nav>
+    </div>
+</header>
+    
+<!-- Page Contents
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<hr />    
+    
+<div class="main_page animated fadeInUp">
+    <div class="container">
+        
+        <div class="row project-header">
+            <!--<div class="three columns offset-by-one">
+                <a class="previous" href="#">
+                    &laquo; Previous Project
+                </a>
+            </div>
+            <div class="four columns portfolio-back">
+                <a class="gallery button" href="../work">
+                    Back To Work Gallery
+                </a>
+            </div>
+            <div class="three columns">
+                <a class="next" href="#">
+                    Next Project &raquo;
+                </a>
+            </div>-->
+            <div class="ten columns offset-by-one">
+                <!--<a class="previous" href="#">
+                    &laquo; Previous Project
+                </a>-->
+                <a class="portfolio-back" href="../work">
+                    Back To Work Gallery
+                </a>
+                <a class="next" href="stamp">
+                    Next Project &raquo;
+                </a>
+            </div>
+        </div> 
+        
+        <div class="ten columns offset-by-one">
+            <h2 class="welcome">Desiging a Voice Assistant for the Ghostbusters</h2>
+        
+        
+            <h4 class="welcome">A study in Voice Interface Design</h4>
+            
+            <br>
+            
+            <figure>
+                <img src='../images/voice_1.jpg' />
+                <!-- <figcaption class="welcome">Caption goes here</figcaption> -->
+            </figure>
+            
+            <br>
+            
+            <h3>Project Details</h3>
+            
+            <p>This is the final project for the course <b>INST631: Fundamentals of HCI</b></p>
+            
+            <br>
+        
+            <h3>Motivation</h3>
+            
+            <p>For our final project for the course, our professor Dr. Jennifer Golbeck instructed us to design a product for the Ghostbusters. The only limitation we had was that we couldn't assume anything about our target audience that didn't hold true in that cinematic universe.</p>
+            
+            <p>After watching the movie series looking for problems to solve, I proposed that I would design a voice assistant for the Ghostbusters. This would be useful for both the novice as well as the experienced Ghostbusters as a way of quickly accessing information about ghosts as well as issuing an SOS, checking the PKE status and checking the containment facility status.</p>
+            
+            <br>
+            
+            <h3>Users, Context and Environment</h3>
+
+            <p>The Ghostbusters are a paranormal investigation and elimination service originally formed by 3 former scientists (2 real and 1 mostly a fake) in New York City. The Ghostbusters are summoned by clients who experience paranormal phenomena, who then investigate the haunted area, locate the paranormal entity, and subdue it to be transported back to the containment unit back at their headquarters. Their investigation often requires them to go take PKE readings, collect and analyze slime samples, and look up historical records on the Occult Reference Net to find out about the origin of entities and to figure out how to tackle them.</p>
+
+            <p>The Ghostbusters’ main weapon is the Proton Gun which requires the use of both hands which makes it hard to access a radio if they need to communicate or call for help when they are in danger. This Proton Gun is connected to a Proton Pack which they carry around on their back. Also, they have gloves on which makes accessing touchscreens almost impossible. They usually go back to their desktop computer at the headquarters to lookup information about ghosts and demons. A voice assistant like Tony Stark’s Jarvis would make their lives easy as well as safe.
+            </p>
+            
+            <div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/PReoFnipxgHok" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/movie-80s-bill-murray-PReoFnipxgHok">via GIPHY</a></p>
+            
+            <p>Pictured above, Venkman can’t blast the Slimer ghost with his Proton gun because he is calling for help on the radio. Also, note the thick rubber gloves.</p>
+            
+            <br>
+            
+            <div style="width:100%;height:0;padding-bottom:43%;position:relative;"><iframe src="https://giphy.com/embed/xT8qB8JD4JEdggL9FC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/ghostbustersmovies-ghostbusters-2-xT8qB8JD4JEdggL9FC">via GIPHY</a></p>
+            
+            <p>Pictured above, in Ghostbusters 2 when Vigo the Carpathian resists their attempt at neutralizing him with their Proton guns, he ends up completely immobilizing all four Ghostbusters. They are unable to move their limbs but are still able to talk. In such a scenario a voice-based assistant would be useful for them to send out an SOS for help.</p>
+            
+            <br>
+            
+            <h3>Concerns</h3>
+            <p>Some concerns were raised about the assistant’s ability to work in noisy environments. These will be addressed later in the Evaluation section.</p>
+            
+            <br>
+            
+            <h3>Design process</h3>
+            
+            <h4>Hardware</h4>
+            <p>I used Google's Do-It-Yourself kit known as <b>AIY Voice Kit</b> to implement the voice assistant. The major drawback is that it runs on a low-power Raspberry Pi Zero due to which it is not possible to make it voice activated via "trigger words". As a result, for this project, the activation has to be done using a physical button at this stage. But hypothetically, the final version will have to be purely voice-activated.</p>
+            
+            <br>
+            
+            <figure>
+                <img src='../images/voice_2.png'/>
+                <figcaption class="welcome">Google AIY Kit</figcaption>
+            </figure>
+            
+            <br>
+            
+            <figure>
+                <img src='../images/voice_3.png'/>
+                <figcaption class="welcome">The pieces eventually fall into place</figcaption>
+            </figure>
+            
+            <br>
+            
+            <h4>Journey Mapping</h4>
+            
+            <p>I mapped the journey of our users, the Ghostbusters, to find pain points where the Voice Assistant would be a valuable addition. Ghostbusters receive a call, visit the site, and take PKE readings. If contact is made, they proceed to try to neutralize or capture the entity. In some cases, if the ghost is a rare entity or is exceptionally strong, they might have to do more research into the history of the entity as well as ways to neutralize it and get back to try again. In some cases, they might have to call other for help (if the team has split up). </p>
+            
+            <figure>
+                <img src='../images/voice_5.png'/>
+                <!--<figcaption class="welcome">After assembly</figcaption>-->
+            </figure>
+            
+            <p>Based on this, I came up with the features listed in the next section.</p>
+            
+            <br>
+            
+            <h4>Feature specifications</h4>
+            <br>
+            
+            <ul class="bodylist">
+                <li>
+                    <p><b>Ghost Wiki:</b> Ask the voice assistant for information about ghosts, demons, and other paranormal entities.</p>
+                    
+                </li>
+                <br>
+                <li>
+                    <p><b>Send out an SOS:</b> Starts a loud alarm for easy location of the ghostbuster who issued the SOS. Also broadcasts the location of that ghostbuster to the others.</p>
+                </li>
+                <br>
+                <li>
+                    <p><b>Send out a silent SOS:</b> This is when the ghostbuster wants to ask for help but without drawing the attention of any entities. Issues a silent alarm along with a location broadcast.</p>
+                </li>
+                <br>
+                <li>
+                    <p><b>PKE Readings:</b> Now there’s no need to hold a bulky PKE meter in your hand. Stay hands-free and ask your Voice Assistant for the status.</p>
+                </li>
+                <br>
+                <li>
+                    <p><b>Containment capacity:</b> Find out if your ghost containment unit is full.</p>
+                </li>
+            </ul>
+            
+            <br>
+            
+            <h4>Storyboarding</h4>
+            
+            <figure>
+                <img src='../images/voice_6.png'/>
+                <!--<figcaption class="welcome"></figcaption>-->
+            </figure>
+            
+            <br>
+            
+            <h3>Final Prototype</h3>
+            
+            <h4>Ghost wiki</h4>
+            
+            <iframe src="https://drive.google.com/file/d/1Xaqg1RfAGkvGA2n5OjfjghWZM53zPu85/preview" width="640" height="480"></iframe>
+            
+            <br>
+            <br>
+            <br>
+            
+            <h4>SOS</h4>
+            
+            <iframe src="https://drive.google.com/file/d/1mF2TB7oiqAC34b-TG7IH-RIGdQOCnl1E/preview" width="640" height="480"></iframe>
+            
+            <br>
+            <br>
+            <br>
+            
+            <h4>Silent SOS</h4>
+            
+            <iframe src="https://drive.google.com/file/d/1J_Iw_aK8yLzaAh17jSa3unIDnwre2LEL/preview" width="640" height="480"></iframe>
+            
+            <br>
+            <br>
+            <br>
+            
+            <h4>PKE Reading</h4>
+            
+            <iframe src="https://drive.google.com/file/d/1VeXdwt-sRInlBI08UiAiP7_M9IjTAy0K/preview" width="640" height="480"></iframe>
+            
+            <br>
+            <br>
+            <br>
+            
+            <h4>Containment status</h4>
+            
+            <iframe src="https://drive.google.com/file/d/1XlZ9bp5V_sBnJSiBfAP6eQtoX4ta7_Ky/preview" width="640" height="480"></iframe>
+            
+            <br>
+            <br>
+            <br>
+            
+            <h4>Bonus Feature : Party time!</h4>
+            
+            <iframe src="https://drive.google.com/file/d/1kAUWsw-s8eFFCrQdHpu-UFeQLGO3B_Ip/preview" width="640" height="480"></iframe>
+            
+            <br>
+            <br>
+            <br>
+            
+            <h3>Evaluation</h3>
+            
+            <p>During the coding phase as well as later during the evaluation phase, I encountered a number of usability issues :</p>
+            <ul class="bodylist">
+                <li>High latencies: Due to the hardware limitations and network latencies, responses were not immediate.</li>
+
+                <li>High-noise environment: This was feedback provided by some users and the professor. This is a problem all the current Voice Assistants like Siri and Alexa face but constant improvements are happening in this area to come up with algorithms that can filter background noise better. In this scenario, I would propose that the Ghostbusters use headphones with a mic to interact with the Assistant.</li>
+
+
+                <li>Error rates: I had to try a number of different Question Phrases for each scenario and choose the ones with the lowest error rates.</li>
+
+                <li>Some phrases were discarded for being too long or too short.</li>
+
+                <li>Some phrases were discarded because, for some reason, Google Speech API was having a hard time identifying them even they had been added as “Expected phrases”.</li>
+
+                <li>In phrases such as “PKE reading”, users tend to trail off and not pronounce the last letter ‘E’ clearly and hence the assistant was only identifying it as “PK reading”. Had to account for those scenarios.</li>
+
+                <li>Identification problems due to users with different accents.</li>
+
+                <li>Similar sounding letters - “PKE” was sometimes identified as “BKE”</li>
+            </ul>
+            <br>
+            
+            <h3>Key Project Takeaways</h3>
+            <p>A key challenge with designing for the Ghostbusters’ universe was that we have only been distant observers of it. All we know about their world is from watching the movies or the cartoons or from reading background information like the Ghostbusters wiki pages. We have not lived it or experienced it first-hand and hence it is not easy to put yourself in the users’ shoes and empathise with them. We had no way of interacting with the universe and had to rely on a lot of observations and assumptions about the way things work. We also had no way to conduct interviews or even talk to the target audience and really understand their pains, desires and needs. This is analogous to situations where we have to design for users who can’t really communicate their needs to us such as small children. A similar situation is when we design for users that are hard to empathize with such as the differently abled. Being able-bodied restricts us from fully understanding our users’ needs since it is not easy to imagine being in their shoes.</p> 
+
+            <p>Another challenge was about how the Google Cloud Speech API struggled to recognize some words I said because of my Indian accent but recognised them when an American said it. I think there is a workaround in this particular scenario but it was something that made me think. As technologists, the first incorrect assumption we make is to assume all the users are like us. I remember seeing a video of an automatic soap dispenser that worked when a white person put his hand under it but not when a coloured person did the same. This means the designers/engineers never accounted for the fact that there will be users of different skin tones and that the sensors will not detect all skin colours in the same way. Also means that the engineers only tested and evaluated their product on white people. This stresses on two important things. Firstly, the importance of designing for an inclusive target audience. Secondly, the importance of diversity in design and engineering teams. If there had been a single coloured person, the team would have learnt pretty early on that the sensors didn’t work on the hands of coloured people.</p>
+
+            <p>There is yet another major takeaway and an even bigger question I can take from this project into the real world. A significant challenge of this project, I would say, was also that of designing for chaotic scenarios such as this where both users’ actions as well the environment can be really unpredictable. We have no way to account for how a particular ghost might react in a particular situation or even what our ghostbuster has to do to neutralize and/or capture the ghost. </p>
+
+            <p>A real-world analogy would be if I had been designing this Voice Assistant for law enforcement agencies or for the armed forces. It’s easy to design for ideal-world scenarios but in a chaotic scenario, users, their environments and people they interact with, all behave in totally different and unanticipated ways. As a designer, we have to strive to anticipate these uncertainties and ambiguities, no matter how difficult or impossible it may seem. But how do we do this? Usually, we spend time with our users in their environment observe them and interview them in real scenarios. Professor Jen told us an anecdote about designing products for firefighters where she said you should experience what it feels like to be in their shoes in a simulated burning building, wearing the protective suit, and carrying heavy equipment, or else it is a futile exercise. But is not practical for us to get into some kinds of dangerous and chaotic scenarios. Like a war-zone or an active law enforcement operation for instance. Then how do we design for these kinds of users and scenarios? These are interesting questions to contemplate and I don’t yet have the answers to them.</p>
+            
+            <br>
+            
+            <h4 class="welcome">THE END</h4>
+        </div>
+        
+        <div class="row project-footer">
+            <!--<div class="three columns offset-by-one">
+                <a class="previous" href="event-planning">
+                    &laquo; Previous Project
+                </a>
+            </div>
+            <div class="four columns portfolio-back">
+                <a class="gallery button" href="../work">
+                    Back To Work Gallery
+                </a>
+            </div>
+            <div class="three columns">
+                <a class="next" href="p2p">
+                    Next Project &raquo;
+                </a>
+            </div>-->
+            <div class="ten columns offset-by-one">
+                <!--<a class="previous" href="#">
+                    &laquo; Previous Project
+                </a>-->
+                <a class="portfolio-back" href="../work">
+                    Back To Work Gallery
+                </a>
+                <a class="next" href="stamp">
+                    Next Project &raquo;
+                </a>
+            </div>
+        </div>
+    </div>
+</div>    
+    
+<footer>
+    <div class="container">
+        
+        <div class="four columns footer">
+            <p class="copyright">&copy; 2019 Ashrith Shetty</p> 
+        </div>
+        <div class="four columns footer">
+            <ul class="social">
+                <li class="linkedin"><a href="https://www.linkedin.com/in/ashrith/" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                <li class="email"><a href="mailto:ashrith.sh@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-lg"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/_ashrith" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+                <li class="instagram"><a href="http://instagram.com/beard.travels" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                <li class="dribbble"><a href="https://dribbble.com/ashrith" target="_blank"><i class="fa fa-dribbble fa-lg"></i></a></li>
+            </ul>
+        </div>
+        <div class="four columns footer">
+            <p class="crafted">Handcrafted with <img class="beer" src="../images/heart.png" alt="heart"/> &amp; <img class="beer" src="../images/beer.png" alt="beer"/></p>
+        </div>
+    </div>
+</footer>
+    
+</div>    
+    
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
