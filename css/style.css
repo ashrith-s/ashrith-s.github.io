@@ -166,6 +166,7 @@ nav a{
     h5{
         font-size: 0.9em;
     }
+    
 }
 
 /* Header and Navigation
@@ -255,7 +256,8 @@ a.active{
 
 .avatar{
     position: relative;
-    height: 16vw;
+    width: 14vw;
+    max-width: 220px;
 }
 
 .overlay{
@@ -309,6 +311,10 @@ a.active{
     .portfolio{
         padding-bottom: 5%;
     }
+    .avatar{
+        text-align: center;
+        width: 200px;
+    }
 }
 
 #project1{
@@ -340,7 +346,7 @@ a.active{
 }
 
 #project8{
-    background-image: url(../images/voice_1.png);
+    background-image: url(../images/voice_1.jpg);
 }
 
 figure img{
