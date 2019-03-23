@@ -658,9 +658,9 @@ button {
 /*    padding: 10px 100px 50px 100px;*/
     width: 700px;
     height: 700px;
-/*    border-radius: 5px;*/
-/*    border: 1px solid #242424;*/
-    background-color: snow;
+/*    border-radius: 1px;*/
+    border: 1px solid #3D4958;
+    background-color: white;
     margin: 0px auto;
     text-align: center;
 }
