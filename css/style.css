@@ -350,6 +350,18 @@ a.active{
     background-image: url(../images/voice_1.jpg);
 }
 
+#project9{
+    background-image: url(../images/gesture_1.jpeg);
+}
+
+#project10{
+    background-image: url(../images/cardash_1.jpg);
+}
+
+#project11{
+    background-image: url(../images/vr_1.jpg);
+}
+
 figure img{
     max-width: 100%;
     height: auto;
