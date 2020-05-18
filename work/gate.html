@@ -124,7 +124,7 @@
             
             <h3>Project details</h3>
             
-            <p>NoBrokerHOOD is a major project that I worked on during my time at the real-estate startup <b>NoBroker</b> as a <b>Senior UX Designer</b>. It is an end-to-end community management system aimed at apartments and gated communities that helps keep track of security, visitor management, staff management, maintenance, and much more.</p>
+            <p>NoBrokerHOOD is a major project that I worked on during my time at the real-estate startup <b>NoBroker</b> as a <b>Senior UX Designer</b>. It is a novel end-to-end community management system aimed at apartments and gated communities that helps keep track of security, visitor management, staff management, maintenance, and much more.</p>
             
             <br>
             
@@ -147,7 +147,7 @@
             
             <h3>Research</h3>
             
-            <p></p>
+            <p>Our product and design team interviewed several apartment residents and society managers to find out what are the most pressing issues and needs they currently have. We also interviewed security guards to find out about the needs and issues from their perspective. Following this we visited guards at societies where other competing solutions were being used, and observed their usage.</p>
             
             <br>
             
@@ -159,6 +159,8 @@
 
             </figure>
             
+            <br>
+            
             <p>These three apps work together in synergy. Security guards use the Guard app for visitor tracking and getting resident approvals, residents use the Resident app to approve requests, track staff attendance, raise an SOS, find domestic help and much more. The Management Dashboard is used by apartment managers who can approve staff, create/update entries for staff and residents, and send notices.</p>
                 
             <p>The Resident apps (for the residents of the hosuing complex) are on both Android and iOS, the Guard App (for the security guards) is Android-only, and the Management Dashboard is a web app. I was responsible for the design of the Guard app, Management Dashboard and some features of the Resident App.</p>
@@ -167,9 +169,9 @@
             
             <h3>Guard App</h3>
             
-            <h4>Requirements</h4>
+            <h4>REQUIREMENTS</h4>
             <p>This app would installed on an Android device (provided by us) which would be with the security guard(s) at the gate. The main requirements for the Guard App were as follows:</p>
-            <uL>
+            <ul>
                 <li>
                 The primary job of the security guards at the gate is to check-in the people coming in and checking them out when they leave. Provide a seamless way to do so.
                 </li>
@@ -182,22 +184,22 @@
                 <li>
                 Design should account for multi-language support since most security guards might not be well versed with English and our app would be deployed in cities across India with different primary languages.
                 </li>
-            </uL>
+            </ul>
             
             <br>
             
-            <h4>Design Overview</h4>
+            <h4>DESIGN</h4>
             
             <p>The primary activities of the guard are:</p>
             <ol>
                 <li>
-                    Check-in visitor(all kinds) -> Entry tab
+                    Check-in visitor(all kinds) => Entry tab
                 </li>
                 <li>
-                    Ask for resident approval to let a <i>guest</i> in -> Waiting tab
+                    Ask for resident approval to let a <i>guest</i> in => Waiting tab
                 </li>
                 <li>
-                    Check-out visitor -> Exit tab
+                    Check-out visitor => Exit tab
                 </li>
             </ol>
             
@@ -209,8 +211,9 @@
             </figure>
             
             <br>
+            <br>
             
-            <h5>Check-In</h5>
+            <h5><b>Check-In</b></h5>
             
             <p>The different kinds of visitors are handled in different ways in the app:</p>
             <ol>
@@ -233,32 +236,57 @@
                     </ul>
                 </li>
                 
+                <br>
+                
+                <figure>
+                <img src='../images/gate_9.png'/>
+                <figcaption class="welcome">Add new service (biometrics)</figcaption>
+                </figure>
+                
                 <figure>
                 <img src='../images/gate_12.png'/>
                 <figcaption class="welcome">Staff check-in via passcode</figcaption>
                 </figure>
                 
+                <br>
+                
                 <figure>
-                <img src='../images/gate_9.png'/>
-                <figcaption class="welcome">Adding biometrics — Mobile</figcaption>
+                <img src='../images/gate_14.png'/>
+                <figcaption class="welcome">Biometric Check-in</figcaption>
                 </figure>
+                
+                <br>
+                
+                <br>
+                <br>
                 
                 <li>
                     
                 <b>One time visitors</b> like delivery executives, or cabs have to be checked in by entering their phone number followed by other details during the first visit. If the visitor has come before then details will auto-populate once they enter their phone number. Can be pre-approved by residents. Residents can also tell the guards in-app to collect the parcel on their behalf.
                 
                 </li>
-                
+                <br>
+            
                 <figure>
                 <img src='../images/gate_10.png'/>
                 <figcaption class="welcome">Delivery check-in</figcaption>
                 </figure>
                 
+                <br>
                 
+                <figure>
+                <img src='../images/gate_13.png'/>
+                <figcaption class="welcome">Cabs check-in</figcaption>
+                </figure>
+                
+                <br>
+                <br>
                 
                 <li>
                 <b>Visiting Guests</b> can be invited in advance by residents using their phone, in which case they will be sent a check-in code that can be used to check-in at the gate. If not, security guards will taake down the details of the guest and ask for resident approval before letting them in. 
                 </li>
+                
+                <br>
                 
                 <figure>
                 <img src='../images/gate_11.png'/>
@@ -267,42 +295,96 @@
             </ol>
             
             <br>
+            <br>
             
-            <h5>Waiting for approval</h5>
+            <h5><b>Waiting for approval</b></h5>
             
-            <figure>
-                <img src='../images/gate_6.png'/>
-                <figcaption class="welcome">Waiting screen</figcaption>
-            </figure>
-            
-            <p>After entering the details, if the visitor is not a pre-approved guest, or </p>
+            <p>After entering the details, if the visitor is not pre-approved, then security guards need to wait for resident approval before letting the visitor enter. The resident can choose to approve or deny the visitor. If the approval request times out, then security guards can manually contact the resident (via phone or intercom) to ask for approval.</p>
             
             <br>
             
-            <h5>Check-out</h5>
+            <figure>
+                <img src='../images/gate_6.png'/>
+                <figcaption class="welcome">Waiting for approval</figcaption>
+            </figure>
             
+            <br>
+            <br>
+            
+            <h5><b>Check-out</b></h5>
+            
+            <p>When a visitor/staff leaves, the security guard needs to check them out on the Exit screen. </p>
+            
+            <br>
+            
+            <figure>
+                <img src='../images/gate_15.png'/>
+                <figcaption class="welcome">Exit screen</figcaption>
+            </figure>
+            
+            <br>
             <br>
             
             <h3>Management Dashboard</h3>
             
-            <h4>Requirements</h4>
+            The Management Dashboard is used by an administrator or manager to maintain the apartment's data. The following operations are conducted in the dashboard:
+            
+            <br>
+            
+            <ul>
+            <li>
+                Staff approvals
+            </li>
+                
+            <li>
+                Manage Noticeboard — Send notices to residents.
+            </li>
+                
+            <li>
+                Manage flats — Add, update and delete occupancy status, intercom/phone, resident details, assigned parking.
+            </li>
+                
+            <li>
+                Manage Staff — Add, update and delete details of staff employed by the society (such as security guard, gardener, etc.)
+            </li>
+                
+            <li>
+                Manage services — Add, update and delete details of people hired by residents (house help, driver, nanny, etc.) and other regular utility visitors (milkman, newspaper vendor, etc.).
+            </li>
+                
+            <li>
+                View and audit visitor records.
+            </li>
+                
+            <li>
+                Track staff attendance
+            </li>
+            </ul>
             
             <figure>
-                <img src='../images/gate_8.png'/>
-                <figcaption class="welcome">Dashboard</figcaption>
+                <img src='../images/gate_5.png'/>
+                <figcaption class="welcome">Dashboard — Data view and Add view</figcaption>
             </figure>
             
             <br>
             
-            <h3>Resident app (selected modules)</h3>
+            <h3>Resident app (Selected feature)</h3>
             
             <h4>Invite guest</h4>
-            
+            This feature on the Resident app allows the resident to invite and pre-approve guests so that, when they arrive, they can just enter their check-in code (sent via SMS) and enter. The guests will not have to fill in any additional information or wait for approval before entry.
             <figure>
                 <img src='../images/gate_7.png'/>
                 <figcaption class="welcome">Invite guest flow</figcaption>
             </figure>
             
+            <br>
+            
+            <figure>
+                <img src='../images/gate_16.png'/>
+                <figcaption class="welcome">Invite guest</figcaption>
+            </figure>
+            
+            <br>
             <br>
             
             <h4 class="welcome">THE END</h4>
