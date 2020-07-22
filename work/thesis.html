@@ -16,7 +16,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Project Title</title>
+  <title>Thesis: Tangible design</title>
   <meta name="description" content="Portfolio of Ashrith Shetty">
   <meta name="author" content="Ashrith Shetty">
 
@@ -125,11 +125,11 @@
             <h2 class="welcome">Tangible Web Layout Design for Blind and Visually Impaired People</h2>
         
         
-            <h4 class="welcome">Using a tangible user interface for accessible web design</h4>
+            <h4 class="welcome">Using a Tangible User Interface (TUI) for accessible web design</h4>
             
                         
             <figure>
-                <img src='../images/thesis.png' alt="System diagram for the TUI tool"/>
+                <img src='../images/thesis_system.png' alt="System diagram for the TUI tool"/>
                 <figcaption class="welcome">System diagram for the TUI web design tool</figcaption>
             </figure>
             
@@ -157,15 +157,51 @@
         
             <h3>Abstract</h3>
             
-            <p>Blind people typically consume web content by using screen readers. However, there is a lack of accessible tools that allow them to create the visual layout of a website without assistance. Recent work in this space enables blind people to edit existing visual layout templates, but there is no way for them to create a layout from scratch. This research project aims to implement a 3D printed tangible user interface (TUI) tool for website layout creation and editing that blind users can use without assistance.</p>
+            <p>Blind and visually impaired (BVI) people typically consume web content by using screen readers. However, there is a lack of accessible tools that allow them to create the visual layout of a website without assistance. Recent work in this space enables blind people to edit existing visual layout templates, but there is no way for them to create a layout from scratch. This research project aims to implement a 3D printed tangible user interface (TUI) tool, named <b><i>Sparsha</i></b>, for website layout creation that blind users can use without assistance.</p>
 
-            <p>I conducted a semi-structured interview followed by a co-design session with a blind HCI graduate student who is also an accessibility researcher. Based on the elicited insights and designs, I implemented the final system using 3D printed tactile elements, an Arduino-powered sensing circuit and a Web server that renders the final HTML layout, provides feedback and can be used to populate content.</p>
+            <p>I conducted a semi-structured interview followed by a co-design session with a blind graduate student who is also an accessibility researcher. Based on the elicited insights and designs, I implemented the final system using 3D printed tactile elements, an Arduino-powered sensing circuit and a Web server that renders the final HTML layout, provides feedback and can be used to populate content.</p>
+            
+            <br>
+            
+            <h3>The Problem</h3>
+            
+            <p>The on-going democratization of assistive technologies is improving the quality of life for millions of people who identify as blind or visually impaired (BVI). Devices like screen readers, tactile printers, and braille displays have also led to new employment opportunities for BVI people. Recent accessible programming tools make it possible for BVI developers to write code to express logic and algorithms and as a result, the number of blind programmers has been steadily rising in the last few years (based on StackOverflow's Annual Developer Survey). Although BVI developers are now able to write code, they still lack accessible ways to define the visual layouts, for instance, the layout of an HTML webpage. Lacking direct feedback about the size and the position of elements, BVI developers can only write code to specify <em>what</em> content they create, but do not understand <em>where</em> to put them and <em>how</em> they look.</p>
             
             <br>
             
 <!--            <h3>Paper</h3>-->
+            <h3>Approach</h3>
             
-            <h4><a href="../doc/Final_thesis.pdf">View / download the paper</a></h4>
+            <p>Ability-based design (Wobbrock et al.) is an approach that advocates shifting the focus of accessible design from disability to ability. Designers should strive to leverage all that their target audience <em>can</em> do.  Blind users use their sense of touch to "navigate and negotiate the world" in their daily life. Previous studies have revealed that blind people have higher tactile acuity than sighted people (Cattaneo et al.). Based on this perspective, I see value in a tool that can support this tactile perceptual ability by using a Tangible User Interface (TUI).
+            </p>
+            
+            <br>
+            
+            <h3>The Process</h3>
+            
+            <br>
+            
+            <figure>
+                <img src='../images/thesis_method.png' alt="Design process" id = "tui_process"/>
+                <figcaption class="welcome">The design process</figcaption>
+            </figure>
+            
+            <p>Employing a user-centered research method, I started with a semi-structured interview to understand the challenges BVI people face as well as potential solutions that they have explored (if any). Based on the interview, I prepared a list of low-fidelity physical probes and artifacts that could potentially help BVI developers in layout creation. Following the Participatory Design approach, these physical probes were then used in a co-design session with a BVI participant. The behavioral evidence collected from the co-deaign session, as well as the interview with the BVI user guided the design of the initial prototype of Sparsha.</p>
+            
+            <br>
+            
+            <h3>Sparsha - The TUI Web Design tool</h3>
+            
+            <br>
+            
+            <figure>
+                <img src='../images/thesis_model.png' alt="The hardware prototype and output on the browser" id ="tui_proto"/>
+                <figcaption class="welcome">Hardware prototype of the TUI tool along with the generated output</figcaption>
+            </figure>
+            
+            <p>When a user places 4 beads of a type on the board (in the shape of a rectangle due to the edge constraints), they snap on to the board due to magnetic contact points. An Arduino-based sensing circuit attached to the base helps identify the type, and location of the beads. It then sends this information over WiFi to the web server which in turn sends an event to the client browser to render an HTML element of the specified type at the specified location. The web application also gives audio feedback to confirm the placement of the correct HTML element at the correct location.</p>
+            
+            <h4><b><a href="../doc/Final_thesis.pdf">View / download the full paper</a></b></h4>
             
             <br>
             
