@@ -265,6 +265,22 @@ a.active{
     max-width: 220px;
 }
 
+/*
+.ribbon {
+    position: absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    transform: scale(0.8, 0.8);
+}
+
+.ribbon-wrapper{
+    position: relative;
+    height: 16vw;
+    top: -16vw;
+    margin-bottom: -16vw;
+}
+*/
+
 .overlay{
     position: relative;
     height: 16vw;
@@ -309,6 +325,16 @@ a.active{
         margin-right: 10vw;
     }
     
+/*
+    .ribbon-wrapper{
+        height: 49vw;
+        top: -49vw;
+        margin-bottom: -49vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+*/
+    
     .overlay_caption{
         top: -25vw;
     }
@@ -321,6 +347,15 @@ a.active{
         width: 200px;
     }
 }
+
+/*
+@media (max-width: 1177px) {
+    
+    .overlay_caption{
+        font-size: 0.9em;
+    }
+}
+*/
 
 #project1{
     background-image: url(../images/event_04.png);
