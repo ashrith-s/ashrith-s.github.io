@@ -257,13 +257,7 @@ a.active{
     height: 16vw;
     background-size: cover;
     background-position: center;
-    max-height: 307px;
-}
-
-.avatar{
-    position: relative;
-    width: 14vw;
-    max-width: 220px;
+    /* max-height: 307px; */
 }
 
 .overlay{
@@ -273,8 +267,14 @@ a.active{
     margin-bottom: -16vw;
     background-color: #000;
     transition: background 0.5s ease;
-    max-height: 307px;
+    /* max-height: 307px; */
     opacity: 0.5;
+}
+
+.avatar{
+    position: relative;
+    width: 14vw;
+    max-width: 220px;
 }
 
 .overlay_sub{
