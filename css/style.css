@@ -312,11 +312,26 @@ a.active{
     opacity: 0.5;
 }
 
+@@media (max-width: 1280px) {
+  .thumb{
+      height: 49vw;
+      margin: 0 10vw;
+      max-height: 307px;
+  }
+  .overlay{
+      height: 49vw;
+      top: -49vw;
+      margin-bottom: -49vw;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      max-height: 307px;
+  }
+}
+
 @media (max-width: 549px) {
     .thumb{
         height: 49vw;
         margin: 0 10vw;
-        max-height: 307px;
     }
     .overlay{
         height: 49vw;
@@ -324,7 +339,6 @@ a.active{
         margin-bottom: -49vw;
         margin-left: 10vw;
         margin-right: 10vw;
-        max-height: 307px;
     }
 
 /*
