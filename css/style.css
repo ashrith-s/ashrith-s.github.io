@@ -257,6 +257,7 @@ a.active{
     height: 16vw;
     background-size: cover;
     background-position: center;
+    max-height: 307px;
 }
 
 .avatar{
@@ -265,22 +266,6 @@ a.active{
     max-width: 220px;
 }
 
-/*
-.ribbon {
-    position: absolute;
-    top: 0.5vw;
-    right: 0.5vw;
-    transform: scale(0.8, 0.8);
-}
-
-.ribbon-wrapper{
-    position: relative;
-    height: 16vw;
-    top: -16vw;
-    margin-bottom: -16vw;
-}
-*/
-
 .overlay{
     position: relative;
     height: 16vw;
@@ -288,6 +273,7 @@ a.active{
     margin-bottom: -16vw;
     background-color: #000;
     transition: background 0.5s ease;
+    max-height: 307px;
     opacity: 0.5;
 }
 
@@ -312,21 +298,6 @@ a.active{
     opacity: 0.5;
 }
 
-/* @media (max-width: 3500px) {
-  .thumb{
-      height: 49vw;
-      margin: 0 10vw;
-      /* max-height: 307px; */
-  }
-  .overlay{
-      height: 49vw;
-      top: -49vw;
-      margin-bottom: -49vw;
-      margin-left: 10vw;
-      margin-right: 10vw;
-      /* max-height: 307px; */
-  }
-} */
 
 @media (max-width: 549px) {
     .thumb{
