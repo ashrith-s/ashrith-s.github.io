@@ -312,7 +312,7 @@ a.active{
     opacity: 0.5;
 }
 
-@@media (max-width: 1280px) {
+@media (max-width: 1280px) {
   .thumb{
       height: 49vw;
       margin: 0 10vw;
