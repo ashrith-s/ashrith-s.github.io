@@ -1,7 +1,7 @@
 /*
 
 Table of Contents
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 - General Content
 - Typography
 - Header and Navigation
@@ -167,7 +167,7 @@ nav a{
     h5{
         font-size: 0.9em;
     }
-    
+
 }
 
 /* Header and Navigation
@@ -229,7 +229,7 @@ a.active{
         text-align: center;
         font-size: 1.2em;
     }
-    
+
     nav{
         width: 100%;
         text-align: center;
@@ -238,7 +238,7 @@ a.active{
         font-size: 0.65em;
         margin: 0 7px;
     }
-}   
+}
 
 
 /* Images and Media
@@ -316,6 +316,7 @@ a.active{
     .thumb{
         height: 49vw;
         margin: 0 10vw;
+        max-height: 307px;
     }
     .overlay{
         height: 49vw;
@@ -323,8 +324,9 @@ a.active{
         margin-bottom: -49vw;
         margin-left: 10vw;
         margin-right: 10vw;
+        max-height: 307px;
     }
-    
+
 /*
     .ribbon-wrapper{
         height: 49vw;
@@ -334,11 +336,11 @@ a.active{
         margin-right: 10vw;
     }
 */
-    
+
     .overlay_caption{
         top: -25vw;
     }
-    
+
     .portfolio{
         padding-bottom: 5%;
     }
@@ -350,7 +352,7 @@ a.active{
 
 /*
 @media (max-width: 1177px) {
-    
+
     .overlay_caption{
         font-size: 0.9em;
     }
@@ -428,7 +430,7 @@ figure img{
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Loading gif START 
+/* Loading gif START
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -459,7 +461,7 @@ Loading gif END */
 	width: 100%;
 }
 
-/* Page load fadeInUp animation 
+/* Page load fadeInUp animation
 -------------------------------     */
 
 .fadeInUp {
@@ -484,7 +486,7 @@ Loading gif END */
         opacity: 0;
         transform: translateY(20px);
     }
-    
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -548,7 +550,7 @@ ul.social li a:hover{
 }
 
 @media (max-width: 549px) {
-    
+
     .twelve.columns.footer{
         height: 50%
     }
@@ -579,11 +581,11 @@ ul.social li.linkedin a:hover{
 }
 
 ul.social li.behance a:hover{
-    
+
 }
 
 ul.social li.dribbble a:hover{
-    
+
 }
 
 ul.social li.twitter a:hover{
@@ -632,7 +634,7 @@ ul{
 }
 
 .slider{
-    opacity: 0.8; 
+    opacity: 0.8;
     width: 500px;
 }
 
@@ -668,14 +670,14 @@ ul{
   border-radius: 2px;
   padding: 15px 32px;
   font-size: 16px;
-  
+
   cursor: pointer;
   color: white;
   background-color: #66a0ff;
   box-shadow: 0 0 4px #999;
   outline: none;
 */
-    
+
   background-position: center;
   transition: background 0.8s;
 }
@@ -695,7 +697,7 @@ button {
   border-radius: 2px;
   padding: 15px 32px;
   font-size: 16px;
-  
+
   cursor: pointer;
   color: white;
   background-color: #66a0ff;
@@ -750,7 +752,7 @@ button {
 }
 
 .box{
-    border: 2px solid #3498db; 
+    border: 2px solid #3498db;
     padding: 20px;
 }
 
@@ -781,23 +783,23 @@ video{
     .gallery{
         font-size: 0.65em;
     }
-    
+
     .next{
         font-size: 0.8em;
     }
-    
+
     .previous{
         font-size: 0.8em;
     }
-    
+
     .portfolio-back{
         font-size: 0.8em;
     }
-    
+
     .project-header{
         margin-bottom: 45px;
     }
-    
+
     .project-footer{
         margin-bottom: 40px;
     }
