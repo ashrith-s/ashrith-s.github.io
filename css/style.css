@@ -329,7 +329,7 @@ a.active{
 }
 
 @media (max-width: 549px) {
-    .thumb{
+    /* .thumb{
         height: 49vw;
         margin: 0 10vw;
     }
@@ -339,7 +339,7 @@ a.active{
         margin-bottom: -49vw;
         margin-left: 10vw;
         margin-right: 10vw;
-    }
+    } */
 
 /*
     .ribbon-wrapper{
